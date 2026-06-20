@@ -17,12 +17,8 @@
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://github.com/tayyebi/launchpad" />
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <style>
-    /* Fallback styles if CSS file fails to load quickly */
-    :root{--bg: #0b1020; --card: #141a2b; --primary:#6C5CE7; --text:#0f1220;}
-    html,body{margin:0;padding:0;direction:rtl;font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial; background: linear-gradient(135deg, #0b1020 0%, #1e1f2a 60%, #0b1020 100%); color:#fff;}
-    header{position:sticky; top:0; z-index:50;}
-  </style>
+  <link href="https://cdn.jsdelivr.net/gh/rastikriz/vazir-font@latest/dist/vazir.css" rel="stylesheet">
+  <!-- Font is loaded via CDN; all styling moved to CSS (styles.css) -->
   <link rel="canonical" href="https://github.com/tayyebi/launchpad" />
   <script type="application/ld+json">
   {
@@ -55,69 +51,69 @@
   </script>
 </head>
 <body>
-  <header id="site-header" role="banner" aria-label="ناوبری" style="background: rgba(0,0,0,.25); backdrop-filter: saturate(1.2) blur(2px);">
-    <nav class="container" style="display:flex; align-items:center; justify-content:space-between; padding:14px 20px; max-width:1100px; margin:0 auto;">
-      <div class="brand" style="font-weight:700; letter-spacing:.5px;">Launchpad</div>
-      <ul class="nav" style="list-style:none; margin:0; padding:0; display:flex; gap:18px; font-size:14px;">
-        <li><a href="#features" style="color:#fff; text-decoration:none; opacity:.9;">ویژگی‌ها</a></li>
-        <li><a href="#gallery" style="color:#fff; text-decoration:none; opacity:.9;">گالری</a></li>
-        <li><a href="#download" style="color:#fff; text-decoration:none; opacity:.9;">دانلود</a></li>
+  <header id="site-header" role="banner" aria-label="ناوبری">
+    <nav aria-label="ناوبری">
+      <strong>Launchpad</strong>
+      <ul aria-label="منو" style="list-style:none; padding:0; margin:0; display:flex; gap:18px;">
+        <li><a href="#features">ویژگی‌ها</a></li>
+        <li><a href="#gallery">گالری</a></li>
+        <li><a href="#download">دانلود</a></li>
       </ul>
     </nav>
   </header>
   <main id="root" role="main" aria-label="محتوا">
-    <section class="hero" id="home-hero" style="padding:72px 20px 40px; background: radial-gradient( circle at 20% -10%, rgba(110,87,216,.6), transparent 40%), linear-gradient(135deg, #1b1f2a 0%, #111522 60%, #0b1020 100%); min-height: 60vh; display:flex; align-items:center;">
-      <div class="container" style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns:1.1fr 0.9fr; gap:32px; align-items:center;">
-        <div class="hero-copy" style="padding:20px; background: rgba(255,255,255,0.04); border-radius:20px; border:1px solid rgba(255,255,255,.08);">
-          <h1 style="font-size: clamp(2rem, 5vw, 3.5rem); margin:0 0 12px 0; color:#fff;">Launchpad</h1>
-          <p style="color:#e6e6f8; font-size:1.15rem; margin:0 0 20px 0; line-height:1.6; max-width:60ch;">یک پلتفرم مدیریت وظایف با تایمر دقیق، ویجت خانگی و تجربه کاربری بی‌نقص. محصولی مدرن برای تیم‌های واقعی.</p>
-          <div style="display:flex; gap:16px; flex-wrap:wrap; align-items:center;">
-            <a href="https://cafebazaar.ir/app/ir.lpad.mobile" aria-label="دانلود از Cafebazaar" style="display:inline-flex; align-items:center; justify-content:center; padding:0; text-decoration:none; border-radius:12px; overflow:hidden;">
-              <img src="https://s.cafebazaar.ir/2/images/badge-new.png" alt="دانلود از Cafebazaar" style="height:68px; width:auto; display:block;" />
+    <section id="home-hero" aria-label="خانه" >
+      <div id="home-hero-inner">
+        <div id="hero-copy">
+          <h1>Launchpad</h1>
+          <p>یک پلتفرم مدیریت وظایف با تایمر دقیق، ویجت خانگی و تجربه کاربری بی‌نقص. محصولی مدرن برای تیم‌های واقعی.</p>
+          <div id="cafebazaar-download">
+            <a href="https://cafebazaar.ir/app/ir.lpad.mobile" aria-label="دانلود از Cafebazaar">
+              <img src="https://s.cafebazaar.ir/2/images/badge-new.png" alt="دانلود از Cafebazaar" />
             </a>
-            <span style="color:#e7e7f7; font-size:14px; opacity:.9;">یا از Cafebazaar دانلود کنید</span>
+            <span id="badge-text">یا از Cafebazaar دانلود کنید</span>
           </div>
         </div>
-        <div class="hero-glow" aria-hidden="true" style="position:relative; height:340px;">
-          <div style="position:absolute; inset:0; border-radius:28px; background: radial-gradient(circle at 30% 20%, rgba(106, 90, 205, .6), transparent 40%), radial-gradient(circle at 70% 70%, rgba(0,0,0,.25), transparent 40%); filter:saturate(1.2); animation: float 8s ease-in-out infinite;"></div>
+        <div id="hero-visual" aria-label="تصویر نمایشی" style="position:relative; height:340px;">
+          <div id="hero-glow" aria-hidden="true"></div>
           <div style="position:absolute; left:6%; bottom:6%; width:92%; height:86%; border-radius:20px; background: linear-gradient(135deg, rgba(255,255,255,.15), rgba(255,255,255,.05)); border:1px solid rgba(255,255,255,.25); box-shadow: inset 0 2px 20px rgba(0,0,0,.15);"></div>
         </div>
       </div>
     </section>
 
-    <section id="features" class="section" style="padding:40px 20px; background:#0b1020;">
-      <div class="container" style="max-width:1100px; margin:0 auto; display:grid; grid-template-columns: repeat(4, 1fr); gap:20px; align-items:stretch;">
-        <article class="feature card" style="background:#11152a; border-radius:14px; padding:20px; text-align:center; color:#e8eaf6; min-height:180px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+    <section id="features" aria-label="ویژگی‌ها">
+      <div id="features-grid">
+        <article id="feature-1" aria-label="feature-1">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="2"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
-          <strong style="margin-top:8px;">مدیریت وظایف</strong>
-          <span style="font-size:12px; color:#cbd5e1;">دسته‌بندی و اولویت‌بندی ساده</span>
+          <strong>مدیریت وظایف</strong>
+          <span>دسته‌بندی و اولویت‌بندی ساده</span>
         </article>
-        <article class="feature card" style="background:#11152a; border-radius:14px; padding:20px; text-align:center; color:#e8eaf6; min-height:180px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <article id="feature-2" aria-label="feature-2">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><path d="M12 3v18M5 12h14"/></svg>
-          <strong style="margin-top:8px;">تایمر دقیق</strong>
-          <span style="font-size:12px; color:#cbd5e1;">زمان‌بندی و پیگیری فعالیت‌ها</span>
+          <strong>تایمر دقیق</strong>
+          <span>زمان‌بندی و پیگیری فعالیت‌ها</span>
         </article>
-        <article class="feature card" style="background:#11152a; border-radius:14px; padding:20px; text-align:center; color:#e8eaf6; min-height:180px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <article id="feature-3" aria-label="feature-3">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4m8-8h-4M4 12H0m6.5-6.5l-2.8-2.8m15.6 15.6l-2.8-2.8"/></svg>
-          <strong style="margin-top:8px;">ویجت خانه</strong>
-          <span style="font-size:12px; color:#cbd5e1;">نمایش سریع روی خانه Android</span>
+          <strong>ویجت خانه</strong>
+          <span>نمایش سریع روی خانه Android</span>
         </article>
-        <article class="feature card" style="background:#11152a; border-radius:14px; padding:20px; text-align:center; color:#e8eaf6; min-height:180px; display:flex; flex-direction:column; align-items:center; justify-content:center;">
+        <article id="feature-4" aria-label="feature-4">
           <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="2"><path d="M12 3l9 4-9 4-9-4 9-4z"/><path d="M3 11l9 4 9-4"/></svg>
-          <strong style="margin-top:8px;">طراحی RTL</strong>
-          <span style="font-size:12px; color:#cbd5e1;">با زبان فارسی بهینه‌سازی‌شده</span>
+          <strong>طراحی RTL</strong>
+          <span>با زبان فارسی بهینه‌سازی‌شده</span>
         </article>
       </div>
     </section>
 
-    <section id="download" class="section" style="padding:40px 20px; background:#0b0f1a;">
-      <div class="container" style="max-width:1100px; margin:0 auto; text-align:center;">
-        <h2 style="color:#fff; margin-bottom:16px;">دانلود محصول</h2>
-        <p style="color:#cbd5e1; margin:0 0 14px 0;">برای دانلود و نصب روی دستگاه اندرویدی، از Cafebazaar استفاده کنید.</p>
-        <a href="https://cafebazaar.ir/app/ir.lpad.mobile" aria-label="دانلود از Cafebazaar" style="display:inline-block; padding:0; border-radius:12px; overflow:hidden;">
-          <img src="https://s.cafebazaar.ir/2/images/badge-new.png" alt="دانلود از Cafebazaar" style="height:68px; width:auto; display:block;"/>
+    <section id="download" class="section" aria-label="دانلود محصول" >
+      <div class="container" style="text-align:center;">
+        <h2>دانلود محصول</h2>
+        <p>برای دانلود و نصب روی دستگاه اندرویدی، از Cafebazaar استفاده کنید.</p>
+        <a href="https://cafebazaar.ir/app/ir.lpad.mobile" aria-label="دانلود از Cafebazaar">
+          <img src="https://s.cafebazaar.ir/2/images/badge-new.png" alt="دانلود از Cafebazaar" />
         </a>
-        <div style="margin-top:12px; opacity:.9; color:#cbd5e1;">دانلود این اپ از Cafebazaar badge</div>
+        <div>دانلود این اپ از Cafebazaar badge</div>
       </div>
     </section>
 
