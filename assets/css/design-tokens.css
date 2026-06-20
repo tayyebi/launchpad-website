@@ -1,0 +1,13 @@
+/* Beach Sun Theme Tokens - warm, sunny palette suitable for RTL layout */
+:root {
+  --bg: #f7efe4;           /* page background: warm sand */
+  --surface: #fff3e0;        /* cards / panels */
+  --surface-2: #ffe9d6;      /* secondary surfaces */
+  --text: #2b2b2b;            /* primary text color */
+  --muted: #6b5a4f;           /* muted text */
+  --primary: #FF7A50;          /* sun coral */
+  --secondary: #F59E0B;        /* amber/orange accent */
+  --accent: #F472B6;           /* pink coral accent */
+  --radius: 12px;
+  --shadow: 0 6px 16px rgba(0,0,0,.08);
+}
