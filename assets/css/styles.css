@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  font-family: Vazir, ui-sans-serif, system-ui, -apple-system, Roboto, Arial, sans-serif;
+  font-family: Vazirmatn, ui-sans-serif, system-ui, -apple-system, Roboto, Arial, sans-serif;
   color: var(--text);
   background: var(--sand);
   direction: rtl;
