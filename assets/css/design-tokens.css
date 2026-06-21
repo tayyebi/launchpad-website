@@ -1,13 +1,20 @@
-/* Beach Sun Theme Tokens - warm, sunny palette suitable for RTL layout */
 :root {
-  --bg: #f7efe4;           /* page background: warm sand */
-  --surface: #fff3e0;        /* cards / panels */
-  --surface-2: #ffe9d6;      /* secondary surfaces */
-  --text: #2b2b2b;            /* primary text color */
-  --muted: #6b5a4f;           /* muted text */
-  --primary: #FF7A50;          /* sun coral */
-  --secondary: #F59E0B;        /* amber/orange accent */
-  --accent: #F472B6;           /* pink coral accent */
-  --radius: 12px;
-  --shadow: 0 6px 16px rgba(0,0,0,.08);
+  --sand: #faf5f0;
+  --cream: #fff8f0;
+  --sky: #7ec8e3;
+  --sky-light: #d4f0f9;
+  --blush: #f8a5c2;
+  --blush-light: #fef0f5;
+  --sunset: #f3a683;
+  --sunset-light: #fef0ea;
+  --text: #2d3436;
+  --text-muted: #94a3b8;
+  --surface: #ffffff;
+  --radius-sm: 12px;
+  --radius: 20px;
+  --radius-lg: 28px;
+  --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+  --shadow: 0 8px 30px rgba(0,0,0,0.06);
+  --shadow-lg: 0 20px 60px rgba(0,0,0,0.08);
+  --transition: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }

@@ -3,42 +3,95 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Launchpad — مدیریت وظایف، تایمر و ویجت خانه</title>
-  <meta name="description" content="Launchpad یک پلتفرم جامع برای مدیریت وظایف، پیگیری زمان اجرا و ارائه ویجت خانه Android است. طراحی مدرن، تجربه کاربری دوستانه و مناسب تیم‌های پویا." />
-  <meta name="keywords" content="مدیریت وظایف, تایمر, زمان‌بندی, ویجت اندروید, Launchpad, اپ فارسی, Productivity" />
+  <title>Launchpad - مدیریت وظایف، تایمر و ویجت هوشمند اندروید</title>
+  <meta name="description" content="Launchpad یک اپلیکیشن اندرویدی برای مدیریت وظایف، تایمر حرفه‌ای و ویجت هوشمند خانه است. با طراحی زیبا و تجربه کاربری روان، بهره‌وری خود را افزایش دهید." />
+  <meta name="keywords" content="مدیریت وظایف, تایمر, ویجت اندروید, اپلیکیشن فارسی, productivity, مدیریت زمان, task manager, timer, android widget, لانچپد, launchpad" />
   <meta name="robots" content="index, follow" />
-  <meta property="og:image" content="https://s.cafebazaar.ir/2/images/badge-new.png" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Launchpad — مدیریت وظایف، تایمر و ویجت خانه" />
-  <meta name="twitter:description" content="Launchpad یک پلتفرم جامع برای مدیریت وظایف، پیگیری زمان اجرا و ارائه ویجت خانه است. طراحی مدرن و کاربرپسند." />
-  <meta name="twitter:image" content="https://s.cafebazaar.ir/2/images/badge-new.png" />
-  <meta property="og:title" content="Launchpad — مدیریت وظایف و زمان‌بندی" />
-  <meta property="og:description" content="تجربه کاربری مدرن و کاملاً واکنش‌گرا برای Launchpad با تمرکز روی محصول." />
+  <meta name="author" content="Tayyebi" />
+  <meta name="language" content="Persian" />
+  <meta name="theme-color" content="#7ec8e3" />
+  <link rel="canonical" href="https://www.lpad.ir" />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Launchpad - مدیریت وظایف، تایمر و ویجت هوشمند اندروید" />
+  <meta property="og:description" content="با Launchpad وظایفت رو مدیریت کن، زمانت رو دقیق اندازه بگیر و با ویجت هوشمند همیشه در جریان باش." />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://github.com/tayyebi/launchpad" />
+  <meta property="og:url" content="https://www.lpad.ir" />
+  <meta property="og:image" content="https://s.cafebazaar.ir/2/images/badge-new.png" />
+  <meta property="og:locale" content="fa_IR" />
+  <meta property="og:site_name" content="Launchpad" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Launchpad - مدیریت وظایف، تایمر و ویجت هوشمند اندروید" />
+  <meta name="twitter:description" content="با Launchpad وظایفت رو مدیریت کن، زمانت رو دقیق اندازه بگیر و با ویجت هوشمند همیشه در جریان باش." />
+  <meta name="twitter:image" content="https://s.cafebazaar.ir/2/images/badge-new.png" />
+
   <link rel="stylesheet" href="assets/css/design-tokens.css" />
   <link rel="stylesheet" href="assets/css/styles.css" />
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/rastikriz/vazir-font@latest/dist/vazir.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikriz/vazir-font@latest/dist/vazir.css"></noscript>
-  <!-- Font is loaded via CDN; all styling moved to CSS (styles.css) -->
-  <link rel="canonical" href="https://github.com/tayyebi/launchpad" />
+  <link rel="preload" href="https://cdn.jsdelivr.net/gh/rastikriz/vazir-font@latest/dist/vazir.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+  <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikriz/vazir-font@latest/dist/vazir.css" /></noscript>
+
+  <!-- Schema.org: SoftwareApplication -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
     "name": "Launchpad",
-    "description": "Launchpad یک پلتفرم جامع برای مدیریت وظایف، تایمر کارها و ویجت خانه Android است.",
-    "operatingSystem": "Android",
-    "applicationCategory": "Productivity",
-    "url": "https://github.com/tayyebi/launchpad",
+    "description": "اپلیکیشن مدیریت وظایف، تایمر و ویجت هوشمند برای اندروید",
+    "operatingSystem": "Android 8.0+",
+    "applicationCategory": "ProductivityApplication",
+    "applicationSubCategory": "Task Management",
+    "url": "https://www.lpad.ir",
     "image": "https://s.cafebazaar.ir/2/images/badge-new.png",
+    "author": {
+      "@type": "Person",
+      "name": "Tayyebi"
+    },
     "offers": {
       "@type": "Offer",
-      "price": "0.00",
-      "priceCurrency": "IRR"
+      "price": "0",
+      "priceCurrency": "IRR",
+      "availability": "https://schema.org/InStock"
+    },
+    "featureList": "مدیریت وظایف, تایمر دقیق, ویجت خانه, طراحی RTL"
+  }
+  </script>
+
+  <!-- Schema.org: WebPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Launchpad - صفحه اصلی",
+    "url": "https://www.lpad.ir/",
+    "description": "صفحه رسمی اپلیکیشن Launchpad برای مدیریت وظایف و زمان",
+    "inLanguage": "fa",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "Launchpad",
+      "url": "https://www.lpad.ir"
+    },
+    "author": {
+      "@type": "Person",
+      "name": "Tayyebi"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "Launchpad",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://s.cafebazaar.ir/2/images/badge-new.png"
+      }
+    },
+    "primaryImageOfPage": {
+      "@type": "ImageObject",
+      "url": "https://s.cafebazaar.ir/2/images/badge-new.png"
     }
   }
   </script>
+
+  <!-- Schema.org: BreadcrumbList -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -59,22 +112,8 @@
     ]
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "Launchpad",
-    "url": "https://www.lpad.ir/",
-    "description": "Launchpad: مدیریت وظایف، تایمر و ویجت خانه برای تیم‌های مدرن. تجربه کاربری پویا و RTL.",
-    "inLanguage": "fa",
-    "author": {"@type": "Person", "name": "Tayyebi"},
-    "publisher": {
-      "@type": "Organization",
-      "name": "Launchpad",
-      "logo": "https://s.cafebazaar.ir/2/images/badge-new.png"
-    }
-  }
-  </script>
+
+  <!-- Schema.org: FAQPage -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -85,138 +124,227 @@
         "name": "Launchpad چیست؟",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "Launchpad یک پلتفرم مدیریت وظایف، تایمر پروژه و ویجت خانه است که به تیم‌ها کمک می‌کند کارها را پیگیری کنند."
+          "text": "Launchpad یک اپلیکیشن اندرویدی برای مدیریت وظایف، تایمر حرفه‌ای و ویجت هوشمند صفحه خانه است. با این اپ می‌توانید کارهای روزانه را سازماندهی کنید، زمان فعالیت‌ها را دقیق اندازه بگیرید و با ویجت اختصاصی، بدون باز کردن اپ از وضعیت وظایف خود مطلع شوید."
         }
       },
       {
         "@type": "Question",
-        "name": "چگونه از Cafebazaar دانلود کنم؟",
+        "name": "ویژگی‌های اصلی Launchpad چیست؟",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "به صفحه دانلود Cafebazaar بروید و روی بنر دانلود کلیک کنید."
+          "text": "مدیریت هوشمند وظایف با دسته‌بندی و اولویت‌بندی، تایمر دقیق برای پیگیری زمان پروژه‌ها، ویجت اختصاصی برای صفحه خانه اندروید، طراحی کاملاً سازگار با زبان فارسی و RTL، و تجربه کاربری مدرن و روان."
         }
       },
       {
         "@type": "Question",
-        "name": "ویژگی‌های کلیدی Launchpad چیست؟",
+        "name": "چگونه Launchpad را دانلود کنم؟",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "مدیریت وظایف، تایمر دقیق، ویجت خانه، طراحی RTL و تجربه کاربری مدرن."
+          "text": "برای دانلود و نصب Launchpad به کافه بازار مراجعه کرده و اپلیکیشن را روی دستگاه اندرویدی خود نصب کنید. لینک مستقیم دانلود در صفحه رسمی Launchpad قرار دارد."
         }
       },
       {
         "@type": "Question",
-        "name": "برای کدام پلتفرم منتشر می‌شود؟",
+        "name": "آیا Launchpad از ویجت خانه پشتیبانی می‌کند؟",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "اندروید با پشتیبانی ویجت خانه و مدیریت وظایف."
+          "text": "بله، Launchpad دارای ویجت هوشمند برای صفحه خانه اندروید است که بدون نیاز به باز کردن اپ، وظایف و وضعیت آن‌ها را نمایش می‌دهد."
         }
       },
       {
         "@type": "Question",
-        "name": "چگونه می‌توانم نظر دهم؟",
+        "name": "آیا Launchpad رایگان است؟",
         "acceptedAnswer": {
           "@type": "Answer",
-          "text": "برای بازخورد از طریق Issues در گیت‌هاب یا ایمیل پشتیبانی اقدام کنید."
+          "text": "بله، Launchpad به صورت رایگان در کافه بازار قابل دانلود و استفاده است."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Launchpad برای چه نسخه‌های اندروید مناسب است؟",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Launchpad برای اندروید ۸ به بالا بهینه‌سازی شده و از آخرین قابلیت‌های ویجت و مدیریت وظایف اندروید پشتیبانی می‌کند."
         }
       }
     ]
   }
   </script>
+
+  <!-- Schema.org: Organization -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "Organization",
     "name": "Launchpad",
-    "url": "https://github.com/tayyebi/launchpad",
+    "url": "https://www.lpad.ir",
     "logo": "https://s.cafebazaar.ir/2/images/badge-new.png",
     "sameAs": [
       "https://github.com/tayyebi/launchpad"
-    ]
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "contactType": "support",
+      "url": "https://github.com/tayyebi/launchpad/issues"
+    }
+  }
+  </script>
+
+  <!-- Schema.org: Product -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Product",
+    "name": "Launchpad",
+    "description": "اپلیکیشن مدیریت وظایف، تایمر و ویجت هوشمند اندروید",
+    "brand": {
+      "@type": "Brand",
+      "name": "Launchpad"
+    },
+    "category": "Productivity",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "IRR",
+      "availability": "https://schema.org/InStock",
+      "seller": {
+        "@type": "Organization",
+        "name": "Launchpad"
+      }
+    }
   }
   </script>
 </head>
 <body>
-  <header id="site-header" role="banner" aria-label="ناوبری">
-    <nav aria-label="ناوبری">
-      <strong>Launchpad</strong>
-      <ul aria-label="منو">
+  <header id="site-header" role="banner">
+    <nav aria-label="ناوبری اصلی">
+      <a href="/" class="brand" aria-label="صفحه اصلی Launchpad">
+        <span class="brand-dot" aria-hidden="true"></span>
+        Launchpad
+      </a>
+      <ul class="nav-links">
         <li><a href="#features">ویژگی‌ها</a></li>
         <li><a href="#gallery">گالری</a></li>
         <li><a href="#download">دانلود</a></li>
       </ul>
     </nav>
   </header>
-  <main id="root" role="main" aria-label="محتوا">
-    <section id="home-hero" aria-label="خانه">
+
+  <main role="main">
+    <!-- Hero -->
+    <section id="home-hero" aria-label="معرفی محصول">
       <div id="home-hero-inner">
         <div id="hero-copy">
-          <h1>Launchpad | لانچ‌پد</h1>
-          <p>یک پلتفرم مدیریت وظایف با تایمر دقیق، ویجت خانگی و تجربه کاربری بی‌نقص. محصولی مدرن برای تیم‌های واقعی.</p>
-          <div id="cafebazaar-download">
-            <a href="https://cafebazaar.ir/app/ir.lpad.mobile" aria-label="دانلود از Cafebazaar">
-              <img src="https://s.cafebazaar.ir/2/images/badge-new.png" alt="دانلود از Cafebazaar" />
-            </a>
-            <span id="badge-text">یا از بازار دانلود کنید</span>
+          <div class="hero-badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+            اپلیکیشن رایگان اندروید
+          </div>
+          <h1>وظایفت رو مدیریت کن<br/>زمانت رو بساز</h1>
+          <p>با Launchpad کارهای روزانه رو سازماندهی کن، زمان پروژه‌ها رو دقیق اندازه بگیر و با ویجت هوشمند صفحه اصلی اندروید، همیشه از وضعیت وظایف با خبر باش.</p>
+          <a href="https://cafebazaar.ir/app/ir.lpad.mobile" class="download-btn" aria-label="دانلود از کافه بازار" rel="nofollow noreferrer">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+            دانلود از کافه بازار
+          </a>
+          <div class="hero-stats">
+            <div class="hero-stat">
+              <div class="hero-stat-number">۴+</div>
+              <div class="hero-stat-label">ویژگی اصلی</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">۱۰۰%</div>
+              <div class="hero-stat-label">رایگان</div>
+            </div>
+            <div class="hero-stat">
+              <div class="hero-stat-number">RTL</div>
+              <div class="hero-stat-label">فارسی کامل</div>
+            </div>
           </div>
         </div>
-        <div id="hero-visual" aria-label="تصویر نمایشی">
-          <div id="hero-glow" aria-hidden="true"></div>
+        <div id="hero-visual" aria-hidden="true">
+          <div id="hero-glow"></div>
         </div>
       </div>
     </section>
 
-    <section id="features" aria-label="ویژگی‌ها">
+    <!-- Features -->
+    <section id="features" aria-label="ویژگی‌های محصول">
+      <div class="section-header">
+        <div class="section-tag">قابلیت‌ها</div>
+        <h2>چرا Launchpad؟</h2>
+        <p>ابزارهای حرفه‌ای برای مدیریت کارها و زمان، همه در یک اپلیکیشن اندرویدی</p>
+      </div>
       <div id="features-grid">
-        <article id="feature-1" aria-label="feature-1">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#7dd3fc" stroke-width="2"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+        <article class="feature-card">
+          <div class="feature-icon sky" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 5H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7a2 2 0 0 0-2-2h-2"/><rect x="9" y="3" width="6" height="4" rx="1"/><line x1="9" y1="12" x2="15" y2="12"/><line x1="9" y1="16" x2="13" y2="16"/></svg>
+          </div>
           <strong>مدیریت وظایف</strong>
-          <span>دسته‌بندی و اولویت‌بندی ساده</span>
+          <span>دسته‌بندی، اولویت‌بندی و پیگیری هوشمند کارهای روزانه با امکان تعیین مهلت و یادآوری</span>
         </article>
-        <article id="feature-2" aria-label="feature-2">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#34d399" stroke-width="2"><path d="M12 3v18M5 12h14"/></svg>
-          <strong>تایمر دقیق</strong>
-          <span>زمان‌بندی و پیگیری فعالیت‌ها</span>
+        <article class="feature-card">
+          <div class="feature-icon blush" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+          </div>
+          <strong>تایمر حرفه‌ای</strong>
+          <span>اندازه‌گیری دقیق زمان فعالیت‌ها با گزارش‌گیری هوشمند و امکان تعیین بازه زمانی دلخواه</span>
         </article>
-        <article id="feature-3" aria-label="feature-3">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#f472b6" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v4m0 12v4m8-8h-4M4 12H0m6.5-6.5l-2.8-2.8m15.6 15.6l-2.8-2.8"/></svg>
-          <strong>ویجت خانه</strong>
-          <span>نمایش سریع روی خانه Android</span>
+        <article class="feature-card">
+          <div class="feature-icon sunset" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="9" y1="21" x2="9" y2="9"/></svg>
+          </div>
+          <strong>ویجت هوشمند</strong>
+          <span>نمایش وظایف و وضعیت آن‌ها روی صفحه خانه اندروید بدون نیاز به باز کردن اپلیکیشن</span>
         </article>
-        <article id="feature-4" aria-label="feature-4">
-          <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#facc15" stroke-width="2"><path d="M12 3l9 4-9 4-9-4 9-4z"/><path d="M3 11l9 4 9-4"/></svg>
-          <strong>طراحی RTL</strong>
-          <span>با زبان فارسی بهینه‌سازی‌شده</span>
+        <article class="feature-card">
+          <div class="feature-icon sky" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+          </div>
+          <strong>طراحی فارسی</strong>
+          <span>بهینه‌سازی کامل برای زبان فارسی با پشتیبانی از نوشتار راست‌به‌چپ و تجربه کاربری بومی</span>
         </article>
       </div>
     </section>
 
-    <section id="download" aria-label="دانلود محصول" >
-      <div id="download-container" class="container">
-        <h2>دانلود محصول</h2>
-        <p>برای دانلود و نصب روی دستگاه اندرویدی، از Cafebazaar استفاده کنید.</p>
-        <a href="https://cafebazaar.ir/app/ir.lpad.mobile" aria-label="دانلود از Cafebazaar">
-          <img src="https://s.cafebazaar.ir/2/images/badge-new.png" alt="دانلود از Cafebazaar" />
-        </a>
-        <div>دانلود این اپ از بازار</div>
-      </div>
-    </section>
-
-    <section id="gallery" aria-label="گالری تصاویر">
+    <!-- Gallery -->
+    <section id="gallery" aria-label="گالری تصاویر اپلیکیشن">
       <div id="gallery-grid">
-        <h2>گالری تصاویر</h2>
-        <div class="grid">
-          <img src="https://s.cafebazaar.ir/images/upload/screenshot/ir.lpad.mobile-156862159236.jpg" alt="تصویر ۱" />
-          <img src="https://s.cafebazaar.ir/images/upload/screenshot/ir.lpad.mobile-921389635041.jpg" alt="تصویر ۲" />
-          <img src="https://s.cafebazaar.ir/images/upload/screenshot/ir.lpad.mobile-676289056117.jpg" alt="تصویر ۳" />
-          <img src="https://s.cafebazaar.ir/images/upload/screenshot/ir.lpad.mobile-786844710200.jpg" alt="تصویر ۴" />
+        <div class="section-header">
+          <div class="section-tag">تصاویر</div>
+          <h2>نمای اپلیکیشن</h2>
+          <p>تصاویری از محیط کاربری Launchpad در اندروید</p>
         </div>
+        <div class="gallery-grid">
+          <img src="https://s.cafebazaar.ir/images/upload/screenshot/ir.lpad.mobile-156862159236.jpg" alt="نمای صفحه اصلی مدیریت وظایف Launchpad در اندروید" loading="lazy" width="360" height="640" />
+          <img src="https://s.cafebazaar.ir/images/upload/screenshot/ir.lpad.mobile-921389635041.jpg" alt="نمای تایمر حرفه‌ای Launchpad برای مدیریت زمان" loading="lazy" width="360" height="640" />
+          <img src="https://s.cafebazaar.ir/images/upload/screenshot/ir.lpad.mobile-676289056117.jpg" alt="نمای ویجت هوشمند Launchpad روی صفحه خانه" loading="lazy" width="360" height="640" />
+          <img src="https://s.cafebazaar.ir/images/upload/screenshot/ir.lpad.mobile-786844710200.jpg" alt="نمای دسته‌بندی وظایف در Launchpad" loading="lazy" width="360" height="640" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Download -->
+    <section id="download" aria-label="دانلود اپلیکیشن">
+      <div id="download-container">
+        <div class="section-tag">همین حالا شروع کن</div>
+        <h2>Launchpad رو نصب کن</h2>
+        <p>با دانلود از کافه بازار، مدیریت وظایف و زمان رو از امروز شروع کن. رایگان، سریع و کارآمد.</p>
+        <a href="https://cafebazaar.ir/app/ir.lpad.mobile" class="download-badge" aria-label="دانلود Launchpad از کافه بازار" rel="nofollow noreferrer">
+          <img src="https://s.cafebazaar.ir/2/images/badge-new.png" alt="دانلود از کافه بازار" width="120" height="40" />
+          دانلود از کافه بازار
+        </a>
       </div>
     </section>
   </main>
-  <footer class="container">
-    کپی‌رایت Launchpad
+
+  <footer id="site-footer" role="contentinfo">
+    <div class="footer-links">
+      <a href="https://github.com/tayyebi/launchpad" rel="nofollow noreferrer" target="_blank">گیت‌هاب</a>
+      <a href="https://github.com/tayyebi/launchpad/issues" rel="nofollow noreferrer" target="_blank">پشتیبانی</a>
+      <a href="https://cafebazaar.ir/app/ir.lpad.mobile" rel="nofollow noreferrer" target="_blank">کافه بازار</a>
+    </div>
+    <p>کپی‌رایت &copy; ۱۴۰۴ - Launchpad. همه حقوق محفوظ است.</p>
   </footer>
-  <script src="assets/js/app.js"></script>
+
+  <script src="assets/js/app.js" defer></script>
 </body>
 </html>
