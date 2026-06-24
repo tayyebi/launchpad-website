@@ -121,6 +121,20 @@ ul {
   transform-origin: right;
 }
 
+.nav-links a:has(img) {
+  padding: 0;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a:has(img)::after {
+  display: none;
+}
+
+.nav-links a img {
+  display: block;
+}
+
 /* Hero */
 #home-hero {
   min-height: 100vh;
