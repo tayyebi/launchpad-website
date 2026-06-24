@@ -224,28 +224,18 @@ ul {
 }
 
 .download-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  background: linear-gradient(135deg, var(--sky), #5ab0d0);
-  color: white;
-  padding: 16px 32px;
-  border-radius: var(--radius-sm);
-  font-size: 1rem;
-  font-weight: 700;
+  display: inline-block;
   transition: var(--transition);
-  box-shadow: 0 8px 24px rgba(126, 200, 227, 0.35);
-  width: fit-content;
+  line-height: 0;
 }
 
 .download-btn:hover {
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(126, 200, 227, 0.45);
 }
 
-.download-btn svg {
-  width: 20px;
-  height: 20px;
+.download-btn img {
+  width: 180px;
+  height: auto;
 }
 
 .hero-stats {
@@ -465,26 +455,18 @@ ul {
 }
 
 .download-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 12px;
-  background: var(--surface);
-  padding: 16px 32px;
-  border-radius: var(--radius-sm);
-  box-shadow: var(--shadow);
+  display: inline-block;
   transition: var(--transition);
-  font-weight: 700;
-  font-size: 0.95rem;
+  line-height: 0;
 }
 
 .download-badge:hover {
-  transform: translateY(-3px);
-  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
 }
 
 .download-badge img {
-  height: 40px;
-  width: auto;
+  width: 180px;
+  height: auto;
 }
 
 /* Footer */
@@ -608,11 +590,6 @@ ul {
 
   #download-container h2 {
     font-size: 1.6rem;
-  }
-
-  .download-btn {
-    padding: 14px 24px;
-    font-size: 0.9rem;
   }
 
   .hero-stats {
