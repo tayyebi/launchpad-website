@@ -223,16 +223,6 @@ ul {
   50% { opacity: 0.7; filter: blur(10px); }
 }
 
-.download-btn {
-  display: inline-block;
-  transition: var(--transition);
-  line-height: 0;
-}
-
-.download-btn:hover {
-  transform: translateY(-2px);
-}
-
 .download-btn img {
   width: 180px;
   height: auto;
@@ -452,16 +442,6 @@ ul {
   font-size: 1rem;
   max-width: 420px;
   line-height: 2;
-}
-
-.download-badge {
-  display: inline-block;
-  transition: var(--transition);
-  line-height: 0;
-}
-
-.download-badge:hover {
-  transform: translateY(-2px);
 }
 
 .download-badge img {
