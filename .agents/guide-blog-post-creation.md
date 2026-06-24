@@ -31,17 +31,18 @@ assets/
 - Target length: 800–1500 words.
 - Mention Launchpad naturally once or twice as a solution where relevant.
 
-### 2. Create the HTML File
+### 2. Create the Post Directory
 
-Create a new file at `blog/<english-slug>.html`.
+Create a directory at `blog/<english-slug>/` with an `index.html` file inside.
 
 **Naming convention:**
 
-- Use **English lowercase slug** (kebab-case).
-- No Persian characters in the filename.
+- Use **English lowercase slug** (kebab-case) for the directory name.
+- No Persian characters in the directory name.
+- The file inside must be named `index.html` (clean URL via directory index).
 - Examples:
-  - `best-persian-time-management-app.html`
-  - `how-to-manage-time-better.html`
+  - `blog/best-persian-time-management-app/index.html` → URL: `/blog/best-persian-time-management-app/`
+  - `blog/how-to-manage-time-better/index.html` → URL: `/blog/how-to-manage-time-better/`
 
 **Use the following template:**
 
@@ -93,9 +94,9 @@ Create a new file at `blog/<english-slug>.html`.
   }
   </script>
 
-  <link rel="stylesheet" href="../assets/css/design-tokens.css" />
-  <link rel="stylesheet" href="../assets/css/styles.css" />
-  <link rel="stylesheet" href="../assets/css/blog.css" />
+  <link rel="stylesheet" href="../../assets/css/design-tokens.css" />
+  <link rel="stylesheet" href="../../assets/css/styles.css" />
+  <link rel="stylesheet" href="../../assets/css/blog.css" />
   <link rel="preload" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
   <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/rastikerdar/vazirmatn@v33.003/Vazirmatn-font-face.css" /></noscript>
 </head>
@@ -149,8 +150,8 @@ Create a new file at `blog/<english-slug>.html`.
           <div class="related-posts">
             <h3>مطالب مرتبط</h3>
             <div class="related-grid">
-              <!-- Link to 2-3 other posts -->
-              <a href="RELATED-POST.html" class="related-card">
+              <!-- Link to 2-3 other posts (relative path: ../OTHER-SLUG/) -->
+              <a href="../RELATED-SLUG/" class="related-card">
                 <div class="related-cover pattern-N"></div>
                 <span class="related-title">عنوان مطلب مرتبط</span>
               </a>
@@ -172,7 +173,7 @@ Create a new file at `blog/<english-slug>.html`.
     <p>کپی‌رایت &copy; ۱۴۰۴ - لانچ‌پد. همه حقوق محفوظ است.</p>
   </footer>
 
-  <script src="../assets/js/app.js" defer></script>
+  <script src="../../assets/js/app.js" defer></script>
 </body>
 </html>
 ```
@@ -210,17 +211,17 @@ Apply the pattern class to the `.post-cover` div. Use different patterns for dif
 
 Open `blog/index.html` and add a new card for the post in the `.blog-grid` section.
 
-Card format:
+Card format (note: link to directory, no `.html` extension):
 ```html
 <article class="blog-card">
-  <a href="ENGLISH-SLUG.html" class="card-cover-link">
+  <a href="ENGLISH-SLUG/" class="card-cover-link">
     <div class="card-cover pattern-N"></div>
   </a>
   <div class="card-body">
     <time datetime="YYYY-MM-DD">تاریخ شمسی</time>
-    <h2><a href="ENGLISH-SLUG.html">عنوان پست</a></h2>
+    <h2><a href="ENGLISH-SLUG/">عنوان پست</a></h2>
     <p>خلاصه‌ای از مطلب در ۱-۲ خط...</p>
-    <a href="ENGLISH-SLUG.html" class="read-more">ادامه مطلب</a>
+    <a href="ENGLISH-SLUG/" class="read-more">ادامه مطلب</a>
   </div>
 </article>
 ```
@@ -267,6 +268,11 @@ Each post should include BreadcrumbList Schema.org JSON-LD in the `<head>`:
 ### 8. Update Related Posts on Other Posts
 
 When adding a new post, consider updating the "مطالب مرتبط" (related posts) section on existing posts to include the new one. Keep 2–3 related links per post.
+
+Use relative paths with trailing slash (no `.html`):
+```html
+<a href="../OTHER-SLUG/" class="related-card">
+```
 
 ### 9. Verify
 
