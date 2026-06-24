@@ -133,6 +133,8 @@ ul {
 
 .nav-links a img {
   display: block;
+  height: 60px;
+  width: auto;
 }
 
 /* Hero */
